@@ -9,6 +9,9 @@ module.exports = {
         wrapper:"rgba(42,43,56,.5)",
         greyf:"#c4c4c4",
         borderc:"#2a2b37"
+      },
+      screens:{
+        'xm':'375px'
       }
     },
   },
