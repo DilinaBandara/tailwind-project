@@ -20,9 +20,9 @@ Thank you again for visiting my portfolio. I hope you enjoy exploring my work an
 +  Github
 
 ## Learning outcomes
-#Familiarity with utility-first CSS
-#Experience with a CSS framework
-#Improved HTML and CSS skills
-#Enhanced web development skills
-#Knowledge of Tailwind CSS documentation and customization
-#Ability to create user-friendly interfaces using Tailwind CSS.
++  Familiarity with utility-first CSS
++  Experience with a CSS framework
++  Improved HTML and CSS skills
++  Enhanced web development skills
++  Knowledge of Tailwind CSS documentation and customization
++  Ability to create user-friendly interfaces using Tailwind CSS.
