@@ -65,7 +65,7 @@
                 </p>
               </div>
               <div class="px-6 pt-4 pb-2 flex items-center justify-center mb-5">
-                <button
+                <button type="button" onclick="toggleModal('ack-id')"
                   class="px-7 py-2 font-semibold text-sm bg-sky-500 hover:bg-sky-700 text-white rounded-full shadow-sm">
                   <span>View Work <i class="fa-solid fa-up-right-from-square pl-2"></i></span>
                 </button>
@@ -84,7 +84,7 @@
                 </p>
               </div>
               <div class="px-6 pt-4 pb-2 flex items-center justify-center mb-5">
-                <button
+                <button type="button" onclick="toggleModal('sef-id')"
                   class="px-7 py-2 font-semibold text-sm bg-sky-500 hover:bg-sky-700 text-white rounded-full shadow-sm">
                   <span>View Work <i class="fa-solid fa-up-right-from-square pl-2"></i></span>
                 </button>
@@ -103,7 +103,7 @@
                 </p>
               </div>
               <div class="px-6 pt-4 pb-2 flex items-center justify-center mb-5">
-                <button type="button" onclick="toggleModal('modal-id')"
+                <button type="button" onclick="toggleModal('stem-id')"
                   class="px-7 py-2 font-semibold text-sm bg-sky-500 hover:bg-sky-700 text-white rounded-full shadow-sm">
                   <span>View Work <i class="fa-solid fa-up-right-from-square pl-2"></i></span>
                 </button>
@@ -121,7 +121,7 @@
                 </p>
               </div>
               <div class="px-6 pt-4 pb-2 flex items-center justify-center mb-5">
-                <button
+                <button type="button" onclick="toggleModal('lsfk-id')"
                   class="px-7 py-2 font-semibold text-sm bg-sky-500 hover:bg-sky-700 text-white rounded-full shadow-sm">
                   <span>View Work <i class="fa-solid fa-up-right-from-square pl-2"></i></span>
                 </button>
@@ -140,51 +140,199 @@
       </h2>
     </footer>
 
-    <!-- Pop Up section -->
-    <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-id">
+    <!-- Pop Up section for ACK-->
+    <div
+      class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center "
+      id="ack-id">
       <div class="relative w-auto my-6 mx-auto max-w-3xl">
         <!--content-->
-        <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+        <div
+          class="border-0 rounded-xl shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
           <!--header-->
-          <div class="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
-            <h3 class="text-3xl font-semibold">
-              Modal Title
+          <div
+            class="text-black mx-auto flex content-center p-2 md:p-3 lg:p-3 border-b border-solid border-slate-200 rounded-t">
+            <h3 class="text-2xl font-bold">
+              The American Corner Kandy
             </h3>
-            <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal('modal-id')">
-              <span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
-                ×
-              </span>
-            </button>
+
           </div>
           <!--body-->
           <div class="relative p-6 flex-auto">
-            <p class="my-4 text-slate-500 text-lg leading-relaxed">
-              I always felt like I could do anything. That’s the main
-              thing people are controlled by! Thoughts- their perception
-              of themselves! They're slowed down by their perception of
-              themselves. If you're taught you can’t do anything, you
-              won’t do anything. I was taught I could do everything.
+            <div class="">
+              <img src="dist\img\ack-popup.jpeg" class="h-60 w-80 mx-auto rounded-md">
+            </div>
+            <p class="my-4 text-slate-500 text-sm lg:text-lg leading-relaxed font-semibold">
+              As a member of the Youth Forum- American Corner Kandy, I had the pleasure of volunteering at hospitals &
+              children’s homes to be of service during these challenging times in the country.
+              <br><br>
+              Through these events I was able to work and collaborate with individuals from various backgrounds by
+              engaging in roles which focused on responsibilities such as managing, planning and organizing.
             </p>
           </div>
           <!--footer-->
-          <div class="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
-            <button class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
-              Close
-            </button>
-            <button class="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
-              Save Changes
+          <div class="flex items-center justify-center p-6 border-t border-solid border-slate-200 rounded-b">
+            <button type="button" onclick="toggleModal('ack-id')"
+              class="px-7 py-2 font-semibold text-sm bg-sky-500 hover:bg-sky-700 text-white rounded-full shadow-sm">
+              <span>Close<i class="fa-solid fa-xmark pl-2"></i></span>
             </button>
           </div>
         </div>
       </div>
     </div>
-    <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-backdrop"></div>
+    <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="ack-id-backdrop"></div>
+
+    <!-- Pop Up section for SEF-->
+    <div
+      class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center "
+      id="sef-id">
+      <div class="relative w-auto my-6 mx-auto max-w-3xl">
+        <!--content-->
+        <div
+          class="border-0 rounded-xl shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+          <!--header-->
+          <div
+            class="text-black mx-auto flex content-center p-2 md:p-3 lg:p-3 border-b border-solid border-slate-200 rounded-t">
+            <h3 class="text-2xl font-bold">
+              Sustainable Education Foundation
+            </h3>
+
+          </div>
+          <!--body-->
+          <div class="relative p-6 flex-auto">
+            <div class="">
+              <img src="dist\img\sef-popup.jpeg" class="h-60 w-96 mx-auto rounded-md">
+            </div>
+            <p class="my-4 text-slate-500 text-sm lg:text-lg leading-relaxed font-semibold">
+              With an objective of improving my technical skills and to gain experience on working with a team, I
+              volunteer at Sustainable Education Foundation(SEF) which focuses on open source contribution. I was
+              exposed to working with technologies such as Git & Github
+              <br><br>
+              - Working and collaborating with a team<br>
+              - Learnt ins and outs of open source contribution <br>
+              - Tools used: Git and GitHub <br>
+            </p>
+          </div>
+          <!--footer-->
+          <div class="flex items-center justify-center p-6 border-t border-solid border-slate-200 rounded-b">
+            <button type="button" onclick="toggleModal('sef-id')"
+              class="px-7 py-2 font-semibold text-sm bg-sky-500 hover:bg-sky-700 text-white rounded-full shadow-sm">
+              <span>Close<i class="fa-solid fa-xmark pl-2"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="sef-id-backdrop"></div>
+
+
+    <!-- Pop Up section for LSFK-->
+    <div
+      class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center "
+      id="stem-id">
+      <div class="relative w-auto my-6 mx-auto max-w-3xl">
+        <!--content-->
+        <div
+          class="border-0 rounded-xl shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+          <!--header-->
+          <div
+            class="text-black mx-auto flex content-center p-2 md:p-3 lg:p-3 border-b border-solid border-slate-200 rounded-t">
+            <h3 class="text-2xl font-bold">
+              STEM Up Educational Foundation
+            </h3>
+
+          </div>
+          <!--body-->
+          <div class="relative p-6 flex-auto">
+            <div class="">
+              <img src="dist\img\stemup-popup.jpg" class="h-80 w-80 mx-auto rounded-md">
+            </div>
+            <p class="my-4 text-slate-500 text-sm lg:text-lg leading-relaxed font-semibold">
+              By volunteerting at the STEMUP Educational Foundation, I received the opportunity
+              to organize both virtual
+              and physical events for over 150+ youngsters and school students focusing on assisting them be exposed
+              to the IT industry at an early age.
+            </p>
+          </div>
+          <!--footer-->
+          <div class="flex items-center justify-center p-6 border-t border-solid border-slate-200 rounded-b">
+            <button type="button" onclick="toggleModal('stem-id')"
+              class="px-7 py-2 font-semibold text-sm bg-sky-500 hover:bg-sky-700 text-white rounded-full shadow-sm">
+              <span>Close<i class="fa-solid fa-xmark pl-2"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="stem-id-backdrop"></div>
+
+    <!-- Pop Up section for LSFK-->
+    <div
+      class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center "
+      id="lsfk-id">
+      <div class="relative w-auto my-6 mx-auto max-w-3xl">
+        <!--content-->
+        <div
+          class="border-0 rounded-xl shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+          <!--header-->
+          <div
+            class="text-black mx-auto flex content-center p-2 md:p-3 lg:p-3 border-b border-solid border-slate-200 rounded-t">
+            <h3 class="text-2xl font-bold">
+              Lanka Software Foundation
+            </h3>
+
+          </div>
+          <!--body-->
+          <div class="relative p-6 flex-auto">
+            <div class="">
+              <!-- <img src="" class="h-60 w-80 mx-auto rounded-md"> -->
+            </div>
+            <p class="my-4 text-slate-500 text-sm lg:text-lg leading-relaxed font-semibold">
+              - Presently contributing to the https://elixir.redcross.lk/ (medicine shortage+pledge tracker) project. 
+              <br>
+              - Responsibilities: QA testing on the admin and donor portals
+              <br><br>
+              https://github.com/LSFLK/MedicinesforLK/wiki
+            </p>
+          </div>
+          <!--footer-->
+          <div class="flex items-center justify-center p-6 border-t border-solid border-slate-200 rounded-b">
+            <button type="button" onclick="toggleModal('lsfk-id')"
+              class="px-7 py-2 font-semibold text-sm bg-sky-500 hover:bg-sky-700 text-white rounded-full shadow-sm">
+              <span>Close<i class="fa-solid fa-xmark pl-2"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="stem-id-backdrop"></div>
+
     <script type="text/javascript">
-      function toggleModal(modalID){
-        document.getElementById(modalID).classList.toggle("hidden");
-        document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
-        document.getElementById(modalID).classList.toggle("flex");
-        document.getElementById(modalID + "-backdrop").classList.toggle("flex");
+      function toggleModal(stemID) {
+        document.getElementById(stemID).classList.toggle("hidden");
+        document.getElementById(stemID + "-backdrop").classList.toggle("hidden");
+        document.getElementById(stemID).classList.toggle("flex");
+        document.getElementById(stemID + "-backdrop").classList.toggle("flex");
+      }
+
+      function toggleModal(lsfkID) {
+        document.getElementById(lsfkID).classList.toggle("hidden");
+        document.getElementById(lsfkID + "-backdrop").classList.toggle("hidden");
+        document.getElementById(lsfkID).classList.toggle("flex");
+        document.getElementById(lsfkID + "-backdrop").classList.toggle("flex");
+      }
+
+      function toggleModal(ackID) {
+        document.getElementById(ackID).classList.toggle("hidden");
+        document.getElementById(ackID + "-backdrop").classList.toggle("hidden");
+        document.getElementById(ackID).classList.toggle("flex");
+        document.getElementById(ackID + "-backdrop").classList.toggle("flex");
+      }
+
+      function toggleModal(sefID) {
+        document.getElementById(sefID).classList.toggle("hidden");
+        document.getElementById(sefID + "-backdrop").classList.toggle("hidden");
+        document.getElementById(sefID).classList.toggle("flex");
+        document.getElementById(sefID + "-backdrop").classList.toggle("flex");
       }
     </script>
 </body>
